@@ -1,10 +1,11 @@
-### Travel Memory Application
-
+## Travel Memory Application
 A full-stack travel memory journal web app built using the **MERN stack**, deployed on **AWS EC2**, and load-balanced with custom domain management via **Cloudflare**.
+
 ---
 ### Architecture diagram
 ![image](https://github.com/user-attachments/assets/e6477b84-4ff0-4e42-8031-db698d79636d)
 
+---
 ## Tech Stack
 
 - **Frontend**: React
