@@ -3,7 +3,7 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
 
 ---
 ### Architecture diagram
-![Architecture Diagram](https://github.com/praysap/TravelMemory/blob/main/assets/architecture.png)
+ <img width="600" alt="image" src="https://github.com/praysap/TravelMemory/blob/main/assets/architecture.png" />
 
 ---
 ## Tech Stack
@@ -94,7 +94,7 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
 
 1. Launch separate EC2 instances (Linux) for frontend.<br>
    Public IP - 44.203.43.133<br>
-   ![image](https://github.com/user-attachments/assets/b02f329a-7981-400f-8872-1b44fc39dbd8)
+   ![Frontend Setup](https://github.com/praysap/TravelMemory/blob/main/assets/Frontend_mern_Stack.png)
 
 3. Install Node.js, clone the same repository.
    ```bash
@@ -163,17 +163,15 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
 
 ### Load Balancing & Scaling
 
-1. Create AMIs for both backend instances.<br>
-   <img width="823" alt="image" src="https://github.com/user-attachments/assets/75af8ffc-001c-427d-997f-d1d09e5a2846" /><br>
+1. Create AMIs for backend instances.<br>
+   <img width="823" alt="image" src="https://github.com/praysap/TravelMemory/blob/main/assets/AMI.png" /><br>
 2. Launch backend instances using these AMIs.<br>
-   <img width="957" alt="image" src="https://github.com/user-attachments/assets/959d9791-9771-4fa9-aac4-3b26bb42a1af" /><br>
+   <img width="823" alt="image" src="https://github.com/praysap/TravelMemory/blob/main/assets/instance.png" /><br>
 3. For Load Balancing, create Target Groups for backend.<br>
-   <img width="429" alt="image" src="https://github.com/user-attachments/assets/dd9356cd-e1c2-42fc-9d43-3b13991fb37f" /><br>
-   <img width="398" alt="image" src="https://github.com/user-attachments/assets/fd619d7f-ceb8-4fec-ad6e-020c45ca1c2b" /><br>
+   <img width="429" alt="image" src="https://github.com/praysap/TravelMemory/blob/main/assets/Target_group.png" /><br>
 4. Create Application Load Balancers and assign target groups.<br>
    NOTE : Make sure the Load balancer is mapped to multi AZs
-   <img width="959" alt="image" src="https://github.com/user-attachments/assets/d737c3c2-d550-48b0-8821-13bf94450d4a" /><br>
-   ![image](https://github.com/user-attachments/assets/b5a9b575-d518-423c-aa21-425d820da886)<br>
+   <img width="959" alt="image" src="https://github.com/praysap/TravelMemory/blob/main/assets/load_balancer.png" /><br>
 ---
 
 ### Custom Domain Setup Using Cloudflare
@@ -183,17 +181,17 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
    e.g. - Subdomain: api.zyanmonster.live<br>
    
 2. Create a CNAME record pointing to the load balancer endpoint.<br>
-   <img width="446" alt="image" src="https://github.com/user-attachments/assets/36cab0cd-c2c6-4c7a-b60d-f65bb64bca30" />
+   <img width="446" alt="image" src="https://github.com/praysap/TravelMemory/blob/main/assets/cloudflare.png" />
 
 
 4. Now we can access the application using domain name because of DNS settings.<br>
-   ![image](https://github.com/user-attachments/assets/f12ae51c-e6ed-4e85-bb9f-41fa3911672d)<br>
+   ![image](https://github.com/praysap/TravelMemory/blob/main/assets/zyanmonsterOutput.png)<br>
 
    Click on "Add Experience" and enter new data through UI.<br>
-   <img width="956" alt="image" src="https://github.com/user-attachments/assets/4d37bc15-44a2-4c4a-af48-a2d4630c58f6" /><br>
+   <img width="956" alt="image" src="https://github.com/praysap/TravelMemory/blob/main/assets/addexperince.png" /><br>
    
    The data get stored in the MongoDB database.<br>
-   ![image](https://github.com/user-attachments/assets/35a49355-3ec9-4dd5-8c9a-8f520830fc55)
+   ![image](https://github.com/praysap/TravelMemory/blob/main/assets/mongodb.png)
 ---
 
 
