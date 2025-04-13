@@ -1,8 +1,8 @@
-## Travel Memory Application
+### Travel Memory Application
 
 A full-stack travel memory journal web app built using the **MERN stack**, deployed on **AWS EC2**, and load-balanced with custom domain management via **Cloudflare**.
 ---
-## Architecture diagram
+### Architecture diagram
 ![image](https://github.com/user-attachments/assets/e6477b84-4ff0-4e42-8031-db698d79636d)
 
 ## Tech Stack
@@ -26,7 +26,7 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
 ### Backend Setup
 
 1. Launch EC2 Instance (Linux) for backend setup.<br>
-   Public IP - 44.203.43.133<br>
+   Public IP - 54.167.66.211<br>
    ![image](https://github.com/user-attachments/assets/e6477b84-4ff0-4e42-8031-db698d79636d)
 
 3. Install Node.js and clone repo.
@@ -92,7 +92,7 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
 ### Frontend Setup
 
 1. Launch separate EC2 instances (Linux) for frontend.<br>
-   Public IP - 43.205.91.11<br>
+   Public IP - 44.203.43.133<br>
    ![image](https://github.com/user-attachments/assets/b02f329a-7981-400f-8872-1b44fc39dbd8)
 
 3. Install Node.js, clone the same repository.
