@@ -3,7 +3,7 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
 
 ---
 ### Architecture diagram
-![image](https://github.com/user-attachments/assets/e6477b84-4ff0-4e42-8031-db698d79636d)
+![Architecture Diagram](https://github.com/praysap/TravelMemory/blob/main/assets/architecture.png)
 
 ---
 ## Tech Stack
@@ -28,7 +28,7 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
 
 1. Launch EC2 Instance (Linux) for backend setup.<br>
    Public IP - 54.167.66.211<br>
-   ![image](https://github.com/user-attachments/assets/e6477b84-4ff0-4e42-8031-db698d79636d)
+   ![Backend Setup](https://github.com/praysap/TravelMemory/blob/main/assets/backend_mern_stack.png)
 
 3. Install Node.js and clone repo.
    ```bash
