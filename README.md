@@ -3,7 +3,7 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
 
 ---
 #### 🧱 Deployment Architecture Diagram
- <img width="600" alt="image" src="https://github.com/praysap/TravelMemory/blob/main/assets/architecture.png" />
+ <img  alt="image" src="https://github.com/praysap/TravelMemory/blob/main/assets/travelmemory-diagram.svg" />
 
 ---
 #### ⚙️ Tech Stack
