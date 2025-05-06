@@ -1,12 +1,12 @@
-## Travel Memory Application
+## ✈️ TravelMemory – Fullstack Deployment on AWS
 A full-stack travel memory journal web app built using the **MERN stack**, deployed on **AWS EC2**, and load-balanced with custom domain management via **Cloudflare**.
 
 ---
-### Architecture diagram
+#### 🧱 Deployment Architecture Diagram
  <img width="600" alt="image" src="https://github.com/praysap/TravelMemory/blob/main/assets/architecture.png" />
 
 ---
-## Tech Stack
+#### ⚙️ Tech Stack
 
 - **Frontend**: React
 - **Backend**: Node.js, Express
@@ -14,12 +14,19 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
 - **Cloud**: AWS EC2, Load Balancer, AMI, VPC
 - **DNS**: Cloudflare
 - **Web Server**: Nginx
+
 ---
 
-### Prerequisites
-1. Ensure backend IP is whitelisted in MongoDB Atlas.
-2. All EC2 instances used were launched in us-east-1 (Mumbai) region.
-3. Snapshots (AMIs) can be reused for creating instances & scailing.
+#### ⚙️ Prerequisites
+
+Before deploying this application, ensure the following:
+
+- ✅ A valid AWS account with permissions to create EC2, ALB, ASG, and Target Groups
+- ✅ Domain access via Cloudflare (e.g., `travelmemory.example.com` and `tmapi.example.com`)
+- ✅ MongoDB Atlas cluster (URI is configured in backend `.env`)
+- ✅ Security group rules allowing HTTP (80), HTTPS (443), and backend port (3000)
+- ✅ Ubuntu-based EC2 AMI with internet access for installing dependencies
+
 ---
 
 ## Quick Deployment Guide
@@ -59,7 +66,7 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
    ```
 
     
-6. Setup Nginx reverse proxy on port 80.
+5. Setup Nginx reverse proxy on port 80.
    ```bash
    sudo apt install nginx -y
    sudo systemctl enable nginx
@@ -78,8 +85,8 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
         proxy_set_header Connection 'upgrade';
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
-    }
-}
+     }
+   }
    ```
    Restart & Reload nginx new config.
    ```bash
@@ -129,7 +136,7 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
    export const baseUrl = process.env.REACT_APP_BACKEND_URL #Calling the value from .env file directy using variable "REACT_APP_BACKEND_URL"
    ```
 
-7. Setup Nginx reverse proxy on port 80 for frontend just like backend.
+6. Setup Nginx reverse proxy on port 80 for frontend just like backend.
    ```bash
    sudo apt install nginx -y
    sudo systemctl enable nginx
@@ -146,8 +153,8 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
 
     location / {
         try_files $uri $uri/ /index.html;
-    }
-}
+     }
+   }
    ```
    Restart & Reload nginx new config.
    ```bash
