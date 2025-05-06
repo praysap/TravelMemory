@@ -8,12 +8,12 @@ A full-stack travel memory journal web app built using the **MERN stack**, deplo
 ---
 #### ⚙️ Tech Stack
 
-- **Frontend**: React
-- **Backend**: Node.js, Express
-- **Database**: MongoDB Atlas
-- **Cloud**: AWS EC2, Load Balancer, AMI, VPC
-- **DNS**: Cloudflare
-- **Web Server**: Nginx
+- ✅ **Frontend**: React
+- ✅ **Backend**: Node.js, Express
+- ✅ **Database**: MongoDB Atlas
+- ✅ **Cloud**: AWS EC2, Load Balancer, AMI, VPC
+- ✅ **DNS**: Cloudflare
+- ✅ **Web Server**: Nginx
 
 ---
 
